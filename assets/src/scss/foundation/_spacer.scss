@@ -1,0 +1,14 @@
+// デフォルト　→　assets/node_modules/bootstrap/scss/_variables.scss
+// spacerの値をカスタマイズ
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.25,
+  5: $spacer * 1.5,
+  6: $spacer * 2,
+  7: $spacer * 3,
+  8: $spacer * 4,
+);

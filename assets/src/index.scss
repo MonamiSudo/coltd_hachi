@@ -1,0 +1,46 @@
+/*
+Bootstrap の変数をここで上書きして Bootstrap のスタイルをカスタマイズ
+Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
+*/
+
+// 色変数を上書き
+$black: #333;
+
+/*全ての $theme-colors を上書き*/
+$primary: #7e0f83;
+$secondary: #364799;
+$success: #1F501D;
+$danger: #BE1A1C;
+$warning: #FDB448;
+$info: #cea6cc;
+$light: #f9f9f9;
+$dark: #212529;
+
+/*$theme-colors マップを記述*/
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+  );
+
+/*独自の色の追加（$custom-colors マップを用意）*/
+$custom-colors: (
+  "blue-light": #E1F3FF,
+  "blue-main": #1F5AD9,
+  "blue-dark": #184880,
+  "accent": #FDB448
+);
+
+/*map-merge で  $theme-colors に $custom-colors をマージ*/
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+/* Bootstrap の Sass を読み込む */
+@import "~bootstrap/scss/bootstrap.scss";
+
+// その他のscssファイル
+@import "./scss/foundation/spacer";
