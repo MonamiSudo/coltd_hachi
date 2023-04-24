@@ -1,0 +1,57 @@
+.p-fv {
+  background-image: url("../images/fv-bg.png");
+  height: 60vh;
+  background-size: cover;
+  background-position: 60% 0;
+
+  &__title {
+    font-size: 48px;
+    top: 138px;
+    left: 16px;
+    position: absolute;
+  }
+
+  &__title-sub {
+    bottom: 124px;
+    left: 16px;
+    right: 16px;
+    position: absolute;
+  }
+
+}
+
+@include mq(md) {
+
+  .p-fv {
+    padding: 280px 0;
+
+    &__title {
+      font-size: 60px;
+      position: static;
+    }
+
+    &__title-sub {
+      font-size: 20px;
+      position: static !important;
+    }
+
+  }
+
+}
+
+@include mq(lg) {
+
+  .p-fv {
+    padding: 240px 0;
+    height: 80vh;
+
+    &__title {
+      font-size: 100px;
+    }
+
+    &__title-sub {
+      font-size: 28px;
+    }
+
+  }
+}

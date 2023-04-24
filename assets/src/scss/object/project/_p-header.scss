@@ -1,0 +1,101 @@
+.p-header {
+  z-index: 9999;
+
+  &__inner {
+    height: inherit;
+  }
+
+  &__nav {
+    background-color: $white;
+    position: absolute;
+    right: 0;
+    left: -19px;
+    top: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition:  ease .4s;
+    padding: 80px 0;
+    width: 100vw;
+  }
+
+  &__nav.active {
+    transform: translateX(0);
+  }
+
+  &__nav-item {
+    list-style: none;
+  }
+
+  &__nav-link {
+    color: $black;
+    border-bottom: 1px solid $gray-light;
+    display: block;
+  }
+
+  // ハンバーガーメニュー設定
+  &__ham {
+    background-color: transparent;
+    height: 48px;
+    width: 48px;
+  }
+
+  &__ham-line {
+    background-color: $white;
+    height: 1px;
+    transition: ease .3s;
+  }
+
+  &__ham-line:nth-child(2) {
+    margin: 10px 0;
+  }
+
+  &__ham-line.active {
+    background-color: $black;
+  }
+
+  &__ham-line.active {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  &__ham-line:nth-child(2).active {
+    opacity: 0;
+  }
+  &__ham-line:nth-child(3).active {
+    transform: rotate(-45deg);
+    top: -11px;
+  }
+
+}
+
+@include mq(md) {
+
+  .p-header {
+    height: 80px;
+
+    &__nav {
+      position: static;
+      transform: initial;
+      background-color: transparent;
+      height: inherit;
+      width: 50%;
+    }
+
+    &__nav-items {
+      width: max-content;
+      height: initial;
+      justify-content: space-between;
+      gap: 0 20px;
+    }
+
+    &__nav-link {
+      color: $white;
+      border: none;
+    }
+
+    &__ham {
+      display: none;
+    }
+
+  }
+
+}

@@ -6,13 +6,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./assets/dist/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <section>
-      <h1 class="text-accent">hello world</h1>
-    </section>
-  </main>
+
+  <header class="p-header w-100 position-fixed">
+    <div class="p-header__inner c-wrapper__1152 position-relative d-flex align-items-center justify-content-between">
+      <figure class="mb-0">
+        <img src="./assets/images/logo.png" alt="ロゴ">
+      </figure>
+      <nav class="p-header__nav py-20 d-md-flex justify-content-md-end py-md-0">
+        <ul class="p-header__nav-items mb-0 px-10 d-md-flex align-items-md-center justify-content-md-between px-md-0">
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="">Home</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="">Cosme</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="js-ham-toggle" class="p-header__ham border-0">
+        <span class="p-header__ham-line position-relative d-block"></span>
+        <span class="p-header__ham-line position-relative d-block"></span>
+        <span class="p-header__ham-line position-relative d-block"></span>
+      </button>
+    </div>
+  </header>
+
+    <main>
+
+      <section class="p-fv position-relative">
+        <h1 class="p-fv__title fw-bold text-white mb-0 text-md-center">Aim for <br class="u-block__sp">the Ichiban</h1>
+        <p class="p-fv__title-sub fw-bold mt-6 mb-0 text-white text-md-center mt-md-7">社員とその家族の幸せを「ICHIBAN」に考えた会社であり続けます！</p>
+      </section>
+
+      <section class="p-fv-sub bg-blue-dark py-10">
+        <div class="c-wrapper__900">
+          <p class="text-white">八という数字には日本では幸福とされる「末広がり」という意味があります。
+            <br>  
+            <br>私共と関わる企業様やお客様のみならず、社員までもがその繋がりの中で幸せが末広がりになっていける起業でありたいという理念で立ち上げたのが株式会社八（ハチ）です。
+            <br>
+            <br>また、その漢字の成り立ちから八には「次第に繁栄していく」という意味もあります。
+            <br>
+            <br>止まらず、邁進し続けられる起業をめざし、その環境下で生み出されるクリエイティブな発想で貢献していきたい。というのが社名の由来です。
+            <br>
+            <br>あなたが幸せになっていけるよう、お手伝いをさせてください。
+            <br>
+            <br>他者との関わりでしか生まれない幸せを繋いでいくことを目標にしています。</p>
+          </div>
+      </section>
+
+      <section class="p-cosme py-15">
+        <div class="c-wrapper__1152">
+          <h2 class="c-heading__title text-center fw-bold mb-0" data-title="Cosme">コスメ開発・卸・代理店</h2>
+          <p class="text-center mt-5 mb-0 fw-bold">「無限大の"美"を追求する」</p>
+          <p class="mt-5 mb-0">株式会社八では化粧品の開発や輸入・販売に関わる様々な実務をはじめ、商品の国内流通のためのトータルサポートを行う化粧品のサービスを提供しています。
+          <br>
+          <br>人とコスメ商品を通じて、感動を与える！を理念に美容業界の活性化をしていくことが
+          <br>私たちの社会貢献と使命と考えております。</p>
+
+          <ul class="p-cosme__items p-0 mb-0 mt-10 d-flex flex-column mt-md-15">
+            <li class="p-cosme__item mb-0 px-4 py-8 bg-blue-light d-flex flex-column flex-md-row p-md-9">
+              <figure class="p-cosme__img-layout mb-0">
+                <img class="u-img__full" src="./assets/images/cosme1.jpg" alt="">
+              </figure>
+              <div class="p-cosme__block">
+                <h3 class="p-cosme__title mb-0 mt-5 text-blue-main fw-bold mt-md-0">コスメ開発</h3>
+                <p class="p-cosme__desc mb-0 mt-3">コスメの開発・企画・流通までトータルコーディネート。
+                  <br>
+                  <br>お客様が求められる商品の企画・開発、そして独自の販路を活用し流通のお手伝いまでを、豊富な経験と実績を元にご提案致します。
+                  <br>発注数100個からスタートできる手軽さなので、小規模からのスタートも可能です。
+                  <br>
+                  <br>独創的で質の高い提案を専門性の高いスタッフがサポートします。</p>
+                </div>
+            </li>
+            <li class="p-cosme__item mb-0 px-4 py-8 bg-blue-light d-flex flex-column flex-md-row p-md-9">
+              <figure class="p-cosme__img-layout mb-0">
+                <img class="u-img__full" src="./assets/images/cosme2.jpg" alt="">
+              </figure>
+              <div class="p-cosme__block">
+                <h3 class="p-cosme__title mb-0 mt-5 text-blue-main fw-bold mt-md-0">化粧品卸売</h3>
+                <p class="p-cosme__desc mb-0 mt-3">多様化と個性化する消費者ニーズに応えるべく、化粧品を中心に日用品、美容製品、雑貨、化粧ポーチ等幅広い商品を取り扱いしております。
+                  <br>
+                  <br>多くの販売店を通じ全国のお客様に提供、安らぎと潤いのある暮らしづくりを通じて、地域社会に貢献出来る様と努力しをいたしております。</p>
+              </div>
+            </li>
+            <li class="p-cosme__item mb-0 px-4 py-8 bg-blue-light d-flex flex-column flex-md-row p-md-9">
+              <figure class="p-cosme__img-layout mb-0">
+                <img class="u-img__full" src="./assets/images/cosme3.jpg" alt="">
+              </figure>
+              <div class="p-cosme__block">
+                <h3 class="p-cosme__title mb-0 mt-5 text-blue-main fw-bold mt-md-0">販売代理店</h3>
+                <p class="p-cosme__desc mb-0 mt-3">化粧品や美容製品の販売代理店の運営を行っています。
+                  <br>日本のコスメ商品はもちろん、海外ブランド化粧品及び雑貨の輸入や販売。
+                  <br>選りすぐりのコスメ商品を揃えており、その数は5,000個以上。
+                  <br>
+                  <br>海外ブランドにおいては、輸入した商品をお客様にダイレクト販売するシステムも確立しており、中間コストや余計な経費を省くことにより低価格でご提供することを実現しました。</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="p-cosme__agency mt-10 py-8 px-4 bg-gray-light position-relative mt-md-15 py-10 px-20">
+            <h3 class="fw-bold text-center text-blue-dark">代理店募集の場合</h3>
+            <p class="mt-5 fw-bold">私たちと一緒に、女性を"美"に導き、より多くの方に化粧品の魅力を知っていただくために販売代理店を広く募集しています。
+            <br>加盟金、入会金ゼロ、在庫ゼロでも始められる全くリスクの無い販売方式です。
+            <br>
+            <br>個人・法人は不問ですので、お気軽にお問い合わせください。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
   <script src="assets/dist/main.js"></script>
 </body>
 </html>

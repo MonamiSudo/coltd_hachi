@@ -1,0 +1,19 @@
+.u-block {
+
+  &__sp {
+    display: block;
+  }
+
+}
+
+@include mq(md) {
+
+  .u-block {
+
+    &__sp {
+      display: none;
+    }
+
+  }
+
+}

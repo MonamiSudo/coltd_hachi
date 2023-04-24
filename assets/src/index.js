@@ -3,3 +3,9 @@
  
 // スタイルシート（Sass）をインポート
 import './index.scss';
+
+import $ from "jquery";
+
+import { HamToggle } from '../js/HamToggle';
+
+$(document).on("click", "#js-ham-toggle", HamToggle);

@@ -5,6 +5,11 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 
 // 色変数を上書き
 $black: #333;
+$font-family-base: 'Inter',
+sans-serif;
+
+// $spacerを上書き
+@import "./scss/foundation/spacer";
 
 /*全ての $theme-colors を上書き*/
 $primary: #7e0f83;
@@ -33,7 +38,8 @@ $custom-colors: (
   "blue-light": #E1F3FF,
   "blue-main": #1F5AD9,
   "blue-dark": #184880,
-  "accent": #FDB448
+  "gray-light": #f9f9f9,
+  "accent": #FDB448,
 );
 
 /*map-merge で  $theme-colors に $custom-colors をマージ*/
@@ -42,5 +48,21 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 /* Bootstrap の Sass を読み込む */
 @import "~bootstrap/scss/bootstrap.scss";
 
+// ==============================================
 // その他のscssファイル
-@import "./scss/foundation/spacer";
+// ==============================================
+// foundation
+@import "./scss/foundation/variable";
+@import "./scss/foundation/mixin";
+// layout
+@import "./scss/layout/l-header";
+// component
+@import "./scss/object/component/wrapper";
+@import "./scss/object/component/heading";
+// utility
+@import "./scss/object/utility/block";
+@import "./scss/object/utility/img";
+// project
+@import "./scss/object/project/p-header";
+@import "./scss/object/project/fv";
+@import "./scss/object/project/cosme";
