@@ -20914,5 +20914,31 @@ textarea.form-control-lg {
     width: 60%;
   }
 }
+.p-seo__items {
+  gap: 32px;
+}
+.p-seo__step {
+  gap: 16px;
+}
+.p-seo__step:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.p-seo__number {
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-seo__steps {
+    width: 44%;
+  }
+  .p-seo__img-layout {
+    width: 56%;
+    height: 280px;
+  }
+  .p-seo__img-layout img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 /*# sourceMappingURL=style.css.map*/

@@ -1,0 +1,40 @@
+.p-seo {
+
+  &__items {
+    gap: 32px;
+  }
+
+  &__step {
+    gap: 16px;
+  }
+
+  &__step:not(:last-child) {
+    border-bottom: 1px solid $white;
+  }
+
+  &__number {
+    border-radius: 100%;
+  }
+
+}
+
+@include mq(md) {
+
+  .p-seo {
+
+    &__steps {
+      width: 44%;
+    }
+
+    &__img-layout {
+      width: 56%;
+      height: 280px;
+    }
+
+    &__img-layout img {
+      object-fit: cover;
+    }
+
+  }
+
+}
