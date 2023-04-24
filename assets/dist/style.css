@@ -20847,5 +20847,72 @@ textarea.form-control-lg {
     width: 48%;
   }
 }
+.p-ec-mall__item {
+  list-style: none;
+  width: 50%;
+}
+
+.p-ec-consul__items {
+  gap: 16px;
+}
+.p-ec-consul__item {
+  list-style: none;
+}
+
+.p-ec-merit__items {
+  gap: 32px;
+}
+.p-ec-merit__item {
+  list-style: none;
+}
+.p-ec-merit__title::after {
+  content: "";
+  display: block;
+  background-color: #184880;
+  width: 48px;
+  height: 2px;
+  margin: 8px auto 0;
+}
+.p-ec-merit__rookie::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #184880;
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .p-ec-consul__items {
+    gap: 40px;
+  }
+  .p-ec-consul__item {
+    width: 46%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .p-ec-mall__item {
+    width: 25%;
+  }
+  .p-ec-consul__item {
+    width: 30%;
+  }
+  .p-ec-merit__item {
+    width: 48%;
+  }
+  .p-ec-merit__block {
+    gap: 28px;
+  }
+  .p-ec-merit__img-layout {
+    width: 40%;
+    height: 120px;
+  }
+  .p-ec-merit__text {
+    width: 60%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map*/
