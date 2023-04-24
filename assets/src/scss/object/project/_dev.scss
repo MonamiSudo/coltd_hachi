@@ -1,0 +1,73 @@
+.p-dev {
+
+  &__items {
+    gap: 40px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__img-layout {
+    width: 48px;
+  }
+
+  &__check {
+    border-bottom: 1px solid $gray;
+    gap: 12px;
+  }
+
+  &__flow {
+    list-style: none;
+  }
+
+  &__flow:not(:first-child) {
+    margin-top: 66px;
+  }
+
+  &__flow:not(:last-child)::after {
+    content: "";
+    display: block;
+    border-top: 24px solid $blue-dark;
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    width: 48px;
+    margin-left: -24px;
+  }
+
+}
+
+@include mq(md) {
+
+  .p-dev {
+
+    &__catchcopy2 {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    &__item {
+      width: 45%;
+    }
+
+  }
+
+}
+
+@include mq(lg) {
+
+  .p-dev {
+
+    &__item {
+      width: 22%;
+    }
+
+    &__check {
+      width: 48%;
+    }
+
+  }
+}

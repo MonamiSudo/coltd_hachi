@@ -66,3 +66,4 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "./scss/object/project/p-header";
 @import "./scss/object/project/fv";
 @import "./scss/object/project/cosme";
+@import "./scss/object/project/dev";

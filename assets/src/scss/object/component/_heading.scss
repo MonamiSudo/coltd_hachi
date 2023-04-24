@@ -11,3 +11,14 @@
   }
 
 }
+
+@include mq(md) {
+
+  .c-heading {
+
+    &__title::before {
+      font-size: 48px;
+    }
+  }
+
+}

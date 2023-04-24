@@ -20613,6 +20613,11 @@ textarea.form-control-lg {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .c-heading__title::before {
+    font-size: 48px;
+  }
+}
 .u-block__sp {
   display: block;
 }
@@ -20791,6 +20796,55 @@ textarea.form-control-lg {
 @media screen and (min-width: 1000px) {
   .p-cosme__img-layout {
     width: 28%;
+  }
+}
+.p-dev__items {
+  gap: 40px;
+}
+.p-dev__item {
+  list-style: none;
+}
+.p-dev__img-layout {
+  width: 48px;
+}
+.p-dev__check {
+  border-bottom: 1px solid #ccc;
+  gap: 12px;
+}
+.p-dev__flow {
+  list-style: none;
+}
+.p-dev__flow:not(:first-child) {
+  margin-top: 66px;
+}
+.p-dev__flow:not(:last-child)::after {
+  content: "";
+  display: block;
+  border-top: 24px solid #184880;
+  border-right: 24px solid transparent;
+  border-left: 24px solid transparent;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  width: 48px;
+  margin-left: -24px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-dev__catchcopy2 {
+    max-width: 600px;
+    margin: auto;
+  }
+  .p-dev__item {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .p-dev__item {
+    width: 22%;
+  }
+  .p-dev__check {
+    width: 48%;
   }
 }
 
