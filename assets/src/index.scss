@@ -69,3 +69,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "./scss/object/project/dev";
 @import "./scss/object/project/ec";
 @import "./scss/object/project/seo";
+@import "./scss/object/project/ad";
+@import "./scss/object/project/cta";
+@import "./scss/object/project/company";

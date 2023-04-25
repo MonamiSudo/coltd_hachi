@@ -1,0 +1,19 @@
+.p-cta {
+
+  &__text {
+    width: 90%;
+    margin: auto;
+  }
+
+  &__link {
+    background-color: $accent;
+    color: $white;
+    border: 1px solid $accent;
+    transition: .4s;
+  }
+  &__link:hover {
+    background-color: $white;
+    color: $accent;
+  }
+
+}

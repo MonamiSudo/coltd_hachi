@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <!-- スタイル -->
   <link rel="stylesheet" href="./assets/dist/style.css">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +18,34 @@
 
   <header class="p-header w-100 position-fixed">
     <div class="p-header__inner c-wrapper__1152 position-relative d-flex align-items-center justify-content-between">
-      <figure class="mb-0">
+      <a class="" href="#">
         <img src="./assets/images/logo.png" alt="ロゴ">
-      </figure>
-      <nav class="p-header__nav py-20 d-md-flex justify-content-md-end py-md-0">
+      </a>
+      <nav id="js-header-nav" class="p-header__nav py-20 d-md-flex justify-content-md-end py-md-0">
         <ul class="p-header__nav-items mb-0 px-10 d-md-flex align-items-md-center justify-content-md-between px-md-0">
           <li class="p-header__nav-item">
             <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="">Home</a>
           </li>
           <li class="p-header__nav-item">
-            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="">Cosme</a>
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="#js-cosme">Cosme</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="#js-service">Service</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="#js-ec">EC</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="#js-seo">SEO</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="#js-ad">AD</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="#js-cta">Contact</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a class="p-header__nav-link fw-bold py-4 px-2 text-decoration-none" href="#js-company">Company</a>
           </li>
         </ul>
       </nav>
@@ -59,7 +80,7 @@
           </div>
       </section>
 
-      <section class="p-cosme py-15 py-md-25">
+      <section id="js-cosme" class="p-cosme py-15 py-md-25">
         <div class="c-wrapper__1152">
           <h2 class="c-heading__title text-center fw-bold mb-0" data-title="Cosme">コスメ開発・卸・代理店</h2>
           <p class="text-center mt-5 mb-0 fw-bold mt-md-6">「無限大の"美"を追求する」</p>
@@ -71,7 +92,7 @@
           <ul class="p-cosme__items p-0 mb-0 mt-10 d-flex flex-column mt-md-15">
             <li class="p-cosme__item mb-0 px-4 py-8 bg-blue-light d-flex flex-column flex-md-row p-md-9">
               <figure class="p-cosme__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/cosme1.jpg" alt="">
+                <img class="u-img__full" src="./assets/images/cosme1.jpg" alt="コスメを手に取る女性">
               </figure>
               <div class="p-cosme__block">
                 <h3 class="p-cosme__title mb-0 mt-5 text-blue-main fw-bold mt-md-0">コスメ開発</h3>
@@ -85,7 +106,7 @@
             </li>
             <li class="p-cosme__item mb-0 px-4 py-8 bg-blue-light d-flex flex-column flex-md-row p-md-9">
               <figure class="p-cosme__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/cosme2.jpg" alt="">
+                <img class="u-img__full" src="./assets/images/cosme2.jpg" alt="コスメ一覧">
               </figure>
               <div class="p-cosme__block">
                 <h3 class="p-cosme__title mb-0 mt-5 text-blue-main fw-bold mt-md-0">化粧品卸売</h3>
@@ -96,7 +117,7 @@
             </li>
             <li class="p-cosme__item mb-0 px-4 py-8 bg-blue-light d-flex flex-column flex-md-row p-md-9">
               <figure class="p-cosme__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/cosme3.jpg" alt="">
+                <img class="u-img__full" src="./assets/images/cosme3.jpg" alt="パソコンをしている女性">
               </figure>
               <div class="p-cosme__block">
                 <h3 class="p-cosme__title mb-0 mt-5 text-blue-main fw-bold mt-md-0">販売代理店</h3>
@@ -119,7 +140,7 @@
         </div>
       </section>
 
-      <section class="p-dev bg-blue-light py-10 py-md-20">
+      <section id="js-service" class="p-dev bg-blue-light py-10 py-md-20">
         <div class="c-wrapper__1152">
           <h2 class="c-heading__title text-center fw-bold mb-0" data-title="Development">Web開発・企画・制作</h2>
           <p class="mt-5 mb-0 mt-md-6 text-md-center">経験豊富なウェブデザイナー・ウェブ開発者・プログラマー達がお客様のご要望に沿った開発はもちろんのこと、ユーザビリティ・アクセシビリティを意識したインターフェースを用意し、使いやすいWebシステムを開発します。</p>
@@ -130,28 +151,28 @@
           <ul class="p-dev__items p-0 mb-0 mt-10 mt-md-15 d-flex flex-column flex-md-row flex-md-wrap justify-content-md-between">
             <li class="p-dev__item mb-0 py-8 px-4 bg-white rounded-3">
               <figure class="p-dev__img-layout mb-0 mx-auto">
-                <img class="u-img__full" src="./assets/images/code.png" alt="">
+                <img class="u-img__full" src="./assets/images/code.png" alt="コード">
               </figure>
               <p class="mb-0 mt-5 fw-bold text-center">Development</p>
               <p class="mb-0 mt-5">当社では多岐にわたる様々なジャンルのWEBシステムの企画・制作に至るまでワンストップにてサポート致します。</p>
             </li>
             <li class="p-dev__item mb-0 py-8 px-4 bg-white rounded-3">
               <figure class="p-dev__img-layout mb-0 mx-auto">
-                <img class="u-img__full" src="./assets/images/pen-ruler.png" alt="">
+                <img class="u-img__full" src="./assets/images/pen-ruler.png" alt="ペンツール">
               </figure>
               <p class="mb-0 mt-5 fw-bold text-center">Product Design</p>
               <p class="mb-0 mt-5">熟練のエンジニアとコーディネーターが、貴社の必要に応じた機能を細部に至るまでヒアリングを行い、一切妥協のないシステムを構築致します。</p>
             </li>
             <li class="p-dev__item mb-0 py-8 px-4 bg-white rounded-3">
               <figure class="p-dev__img-layout mb-0 mx-auto">
-                <img class="u-img__full" src="./assets/images/window.png" alt="">
+                <img class="u-img__full" src="./assets/images/window.png" alt="ブラウザ">
               </figure>
               <p class="mb-0 mt-5 fw-bold text-center">UI/UX Research</p>
               <p class="mb-0 mt-5">UIからバックオフィスをサポートするシステムに至るまで、WEB開発に必要な項目を全てカバー致します。</p>
             </li>
             <li class="p-dev__item mb-0 py-8 px-4 bg-white rounded-3">
               <figure class="p-dev__img-layout mb-0 mx-auto">
-                <img class="u-img__full" src="./assets/images/chart.png" alt="">
+                <img class="u-img__full" src="./assets/images/chart.png" alt="マーケティング">
               </figure>
               <p class="mb-0 mt-5 fw-bold text-center">Digital Marketing</p>
               <p class="mb-0 mt-5">また、当社はゼロから作り出す創造力に長けておりますので、よくある指示待ちの姿勢ではなく一緒になって考えご提案しながら開発を行っていきます。</p>
@@ -162,49 +183,49 @@
           <ul class="mb-0 p-0 bg-white rounded-3 mt-10 py-8 px-4 d-flex flex-column flex-lg-row flex-lg-wrap justify-content-between">
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">Webサービスの立ち上げに伴いWebシステム開発をしたい</p>
             </li>
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">要件定義から保守までトータル的に見てほしい</p>
             </li>
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">デバイスごとに最適なWebシステムを開発したい</p>
             </li>
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">自社に合ったシステムを開発したい</p>
             </li>
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">Webシステムを利用して業務効率化を図りたい</p>
             </li>
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">自社サイトに合うシステムが分からない</p>
             </li>
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">そもそも何をすれば良いか分からない</p>
             </li>
             <li class="p-dev__check mb-4 d-flex align-items-center pb-2">
               <figure class="mb-0">
-                <img src="./assets/images/ok-circle.png" alt="">
+                <img src="./assets/images/ok-circle.png" alt="チェックマーク">
               </figure>
               <p class="mb-0">その他、専門的なジャンルやニッチなお悩みなど</p>
             </li>
@@ -249,7 +270,7 @@
         </div>
       </section>
 
-      <section class="p-ec py-15 py-md-25">
+      <section id="js-ec" class="p-ec py-15 py-md-25">
         <div class="c-wrapper__1152">
           <h2 class="c-heading__title text-center fw-bold mb-0" data-title="EC">EC事業コンサル</h2>
           <p class="mt-5 mb-0 mt-md-6 text-md-center">株式会社八では、ECコンサルタント事業を長年に渡って行っており、今までに500社以上手がけた実績がございます。
@@ -264,42 +285,42 @@
           <ul class="mt-8 mb-0 p-0 d-flex flex-wrap">
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/rakuten.png" alt="">
+                <img class="u-img__full" src="./assets/images/rakuten.png" alt="Rakuten">
               </figure>
             </li>
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/amazon.png" alt="">
+                <img class="u-img__full" src="./assets/images/amazon.png" alt="amazon">
               </figure>
             </li>
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/yahoo.png" alt="">
+                <img class="u-img__full" src="./assets/images/yahoo.png" alt="Yahoo!Japanショッピング">
               </figure>
             </li>
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/aupay.jpg" alt="">
+                <img class="u-img__full" src="./assets/images/aupay.jpg" alt="aupayマーケット">
               </figure>
             </li>
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/qoo10.jpg" alt="">
+                <img class="u-img__full" src="./assets/images/qoo10.jpg" alt="Qoo10">
               </figure>
             </li>
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/zozo.png" alt="">
+                <img class="u-img__full" src="./assets/images/zozo.png" alt="zozotown">
               </figure>
             </li>
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/merukari.jpg" alt="">
+                <img class="u-img__full" src="./assets/images/merukari.jpg" alt="mercari">
               </figure>
             </li>
             <li class="p-ec-mall__item mb-0">
               <figure class="p-ec-mall__img-layout mb-0">
-                <img class="u-img__full" src="./assets/images/shopify.png" alt="">
+                <img class="u-img__full" src="./assets/images/shopify.png" alt="shopify">
               </figure>
             </li>
           </ul>
@@ -308,32 +329,32 @@
           <ul class="p-ec-consul__items mt-8 mb-0 p-0 d-flex flex-column flex-md-row justify-content-md-between flex-md-wrap">
             <li class="p-ec-consul__item mb-0">
               <figure class="mb-0">
-                <img class="u-img__full" src="./assets/images/ec-1.svg" alt="">
+                <img class="u-img__full" src="./assets/images/ec-1.svg" alt="通販の仕組みが分からない">
               </figure>
             </li>
             <li class="p-ec-consul__item mb-0">
               <figure class="mb-0">
-                <img class="u-img__full" src="./assets/images/ec-2.svg" alt="">
+                <img class="u-img__full" src="./assets/images/ec-2.svg" alt="もっと売れるサイトにしたい">
               </figure>
             </li>
             <li class="p-ec-consul__item mb-0">
               <figure class="mb-0">
-                <img class="u-img__full" src="./assets/images/ec-3.svg" alt="">
+                <img class="u-img__full" src="./assets/images/ec-3.svg" alt="商品の仕入れや管理を簡易にしたい">
               </figure>
             </li>
             <li class="p-ec-consul__item mb-0">
               <figure class="mb-0">
-                <img class="u-img__full" src="./assets/images/ec-4.svg" alt="">
+                <img class="u-img__full" src="./assets/images/ec-4.svg" alt="柔軟なカスタマイズをしたい">
               </figure>
             </li>
             <li class="p-ec-consul__item mb-0">
               <figure class="mb-0">
-                <img class="u-img__full" src="./assets/images/ec-5.svg" alt="">
+                <img class="u-img__full" src="./assets/images/ec-5.svg" alt="商品の仕入れや管理が面倒">
               </figure>
             </li>
             <li class="p-ec-consul__item mb-0">
               <figure class="mb-0">
-                <img class="u-img__full" src="./assets/images/ec-6.svg" alt="">
+                <img class="u-img__full" src="./assets/images/ec-6.svg" alt="本格的なオムニチャネル対応を実現したい">
               </figure>
             </li>
           </ul>
@@ -344,11 +365,11 @@
               <p class="p-ec-merit__title mb-0 fw-bold text-center">個人での導入ついて</p>
               <div class="p-ec-merit__block d-flex flex-column flex-lg-row mt-md-8">
                 <figure class="p-ec-merit__img-layout mb-0 mt-6 mt-md-0">
-                  <img class="u-img__full" src="./assets/images/remote-work.jpg" alt="">
+                  <img class="u-img__full" src="./assets/images/remote-work.jpg" alt="パソコン">
                 </figure>
                 <p class="p-ec-merit__text mb-0 mt-4 mt-lg-0">・初期費用25万円から最短2週間でオープン可能
                   <br>・お客様のニーズに合わせたプランでご提案致します
-                  <br>・にスマホ操作だけで簡単出品・販売管理が可能
+                  <br>・スマホ操作だけで簡単出品・販売管理が可能
                   <br>・在庫や価格などの自動更新が可能
                   <br>・高い技術力のAIで、市場からニーズのある商品を選定比較する事が可能</p>
               </div>
@@ -357,7 +378,7 @@
               <p class="p-ec-merit__title mb-0 fw-bold text-center">法人での導入ついて</p>
               <div class="p-ec-merit__block d-flex flex-column flex-lg-row mt-md-8">
                 <figure class="p-ec-merit__img-layout mb-0 mt-6 mt-md-0">
-                  <img class="u-img__full" src="./assets/images/meeting-room.jpg" alt="">
+                  <img class="u-img__full" src="./assets/images/meeting-room.jpg" alt="会議室">
                 </figure>
                 <p class="p-ec-merit__text mb-0 mt-4 mt-lg-0">・売り上げ目標別によるプランのご提案
                   <br>・販売管理システムを自由にカスタマイズ可能
@@ -378,7 +399,7 @@
         </div>
       </section>
 
-      <section class="p-seo bg-blue-light py-10 py-md-20">
+      <section id="js-seo" class="p-seo bg-blue-light py-10 py-md-20">
         <div class="c-wrapper__1152">
           <h2 class="c-heading__title text-center fw-bold mb-0" data-title="SEARCH ENGINE OPTIMIZATION">SEO対策</h2>
           <p class="mt-5 mb-0 mt-md-6 text-md-center">株式会社八では、独自のノウハウを元に最新のアルゴリズムと時代に合わせたニーズを取り入れています。
@@ -406,7 +427,7 @@
               </li>
             </ul>
             <figure class="p-seo__img-layout">
-              <img class="u-img__full" src="./assets/images/seo.jpg" alt="">
+              <img class="u-img__full" src="./assets/images/seo.jpg" alt="分析">
             </figure>
           </div>
 
@@ -418,6 +439,114 @@
           <br>オーガニック検索での流入を増やすことを考えているサイトにとってSEO内部対策は、必ず必要であり重要な施策です。</p>
         </div>
       </section>
+
+      <section id="js-ad" class="p-ad bg-blue-light py-10 mt-15 py-md-20 mt-md-25 position-relative">
+        <div class="c-wrapper__1152">
+          <h2 class="c-heading__title text-center fw-bold mb-0" data-title="LISTING AD">リスティング広告</h2>
+
+          <ul class="p-ad__items p-0 mt-8 mt-md-15 d-flex flex-column flex-md-row flex-md-wrap justify-content-md-between">
+            <li class="p-ad__item mb-0">
+              <figure class="p-ad__img-layout mb-0">
+                <img class="u-img__full" src="./assets/images/student.jpg" alt="パソコンをやっている女性">
+              </figure>
+              <div class="p-ad__text bg-white py-5 px-4 mb-0 py-md-6 px-md-10">
+                <p class="mb-0">リスティング広告はすぐにでも広告配信を開始できるのが魅力の一つです。
+                <br>購買意欲の高いユーザーへの広告配信が実現できるため、ピンポイントに訴求することができます。
+                <br>・Google AdWords
+                <br>・Yahoo!プロモーション広告</p>
+              </div>
+            </li>
+            <li class="p-ad__item mb-0">
+              <figure class="p-ad__img-layout mb-0">
+                <img class="u-img__full" src="./assets/images/trust.jpg" alt="ビジネスマンが握手している">
+              </figure>
+              <div class="p-ad__text bg-white py-5 px-4 mb-0 py-md-6 px-md-10">
+                <p class="mb-0">2つを活用した広告でクライアント様の商品、サービスを求めているユーザーを届けます。
+                <br>リスティング広告では、顧客の検索意図に意図に応じたキーワード設計が重要です。
+                <br>目的とするキーワードを最優先で設定し配信することで、CVを大きく上げることが可能です。</p>
+              </div>
+            </li>
+            <li class="p-ad__item mb-0">
+              <figure class="p-ad__img-layout mb-0">
+                <img class="u-img__full" src="./assets/images/startup.jpg" alt="複数人が机で作業している">
+              </figure>
+              <div class="p-ad__text bg-white py-5 px-4 mb-0 py-md-6 px-md-10">
+                <p class="mb-0">顧客視点の具体的メリットを含む質の高い広告文を作ります。
+                  <br>適切な広告配信を行うことで、将来の顧客に対するアプローチが可能になります。
+                </p>
+              </div>
+            </li>
+            <li class="p-ad__item mb-0">
+              <figure class="p-ad__img-layout mb-0">
+                <img class="u-img__full" src="./assets/images/digital-marketing.jpg" alt="データを分析している">
+              </figure>
+              <div class="p-ad__text bg-white py-5 px-4 mb-0 py-md-6 px-md-10">
+                <p class="mb-0">株式会社八では、広告ランディングページを顧客の為に日々改善していきます。
+                <br>クライアント様に正確な運用状況を直接お伝えしてご理解をいただいたうえで、目標に向けて実施・達成をする体制を構築しております。</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="p-ad__merit py-8 px-4 bg-gray-light position-relative py-md-10 px-md-20">
+            <p class="mt-5 fw-bold">初心者の方にも分かりやすいので、副業にもオススメです。
+              <br>副業として月に20万円稼ぎたい、月間1,000万円以上の売り上げ規模など、目標や想定によってのプランを都度ご提案致します。
+              <br>
+              <br>当社のECシステムは、業界でも注目されているハイクオリティの販売システムとなっております。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="js-cta" class="p-cta py-20 py-md-25">
+        <p class="p-cta__text text-center fw-bold mb-0">まずは気軽にお悩み・資料請求などお問い合わせくださいませ</p>
+        <div class="text-center">
+          <a class="p-cta__link d-inline-block py-3 px-20 mx-auto mt-4 rounded-3 text-decoration-none fw-bold py-md-4 px-md-25" href="">まずは気軽に資料請求</a>
+        </div>
+      </section>
+
+      <section id="js-company" class="p-company bg-gray-light py-8 py-md-20">
+        <div class="c-wrapper__800">
+          <h2 class="c-heading__title text-center fw-bold mb-0" data-title="Company">会社概要</h2>
+
+          <dl class="p-company__list mb-0 mt-10 mt-md-15 d-flex flex-wrap">
+            <dt class="p-company__term pb-4 fw-bold py-md-4">会社名</dt>
+            <dd class="p-company__desc py-4 mb-0">株式会社八（ハチ）</dd>
+            <dt class="p-company__term py-4 fw-bold">創業</dt>
+            <dd class="p-company__desc py-4 mb-0">2017年2月</dd>
+            <dt class="p-company__term py-4 fw-bold">設立</dt>
+            <dd class="p-company__desc py-4 mb-0">2022年10月</dd>
+            <dt class="p-company__term py-4 fw-bold">資本金</dt>
+            <dd class="p-company__desc py-4 mb-0">358万円</dd>
+            <dt class="p-company__term py-4 fw-bold">代表者</dt>
+            <dd class="p-company__desc py-4 mb-0">玉本 真也</dd>
+            <dt class="p-company__term py-4 fw-bold">事業内容</dt>
+            <dd class="p-company__desc py-4 mb-0">【WEB開発事業】
+            <br>システム及びWEBコンテンツ企画・制作・運営・ホームページ制作・アプリ開発等
+            <br><br>【ECコンサル事業】
+            <br>EC事業に関する開業・運営サポート・自動販売システム販売
+            <br><br>【WEBメディア・広告事業】
+            <br>SEO対策・コンテンツマーケティング・記事制作・リスティング広告</dd>
+            <dt class="p-company__term py-4 fw-bold">所在地</dt>
+            <dd class="p-company__desc py-4 mb-0">〒170-0013　
+            <br>東京都豊島区東池袋1-31-10ドミール池袋209</dd>
+            <dt class="p-company__term py-4 fw-bold">電話番号</dt>
+            <dd class="p-company__desc py-4 mb-0"><a class="text-black" href="tel:03-6364-0903">03-6364-0903</a></dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="p-map pt-15 pt-25">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.7532161702184!2d139.71389407611005!3d35.732287372570816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d66794f318d%3A0xca1db65798ed9a82!2z44CSMTcwLTAwMTMg5p2x5Lqs6YO96LGK5bO25Yy65p2x5rGg6KKL77yR5LiB55uu77yT77yR4oiS77yR77yQIOODieODn-ODvOODq-axoOiiiw!5e0!3m2!1sja!2sjp!4v1682393912819!5m2!1sja!2sjp"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <footer class="bg-blue-dark mt-8 mt-15 py-2">
+        <div class="text-center">
+          <small class="mx-auto text-white">© 2022. All Rights Reserved - Ichiban.Inc</small>
+        </div>
+      </footer>
 
     </main>
   <script src="assets/dist/main.js"></script>

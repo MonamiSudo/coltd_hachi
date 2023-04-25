@@ -1,0 +1,13 @@
+.p-company {
+
+  &__term {
+    border-bottom: 1px solid $blue-dark;
+    width: 40%;
+  }
+
+  &__desc {
+    border-bottom: 1px solid $blue-dark;
+    width: 60%;
+  }
+
+}

@@ -32,6 +32,10 @@
     display: block;
   }
 
+  &__nav-link:hover {
+    color: $black;
+  }
+
   // ハンバーガーメニュー設定
   &__ham {
     background-color: transparent;
@@ -53,6 +57,10 @@
     background-color: $black;
   }
 
+  &__ham-line.change-black {
+    background-color: $black;
+  }
+
   &__ham-line.active {
     transform: rotate(45deg);
     top: 10px;
@@ -71,6 +79,11 @@
 
   .p-header {
     height: 80px;
+    transition: .3s;
+
+    &.active {
+      background-color: $white;
+    }
 
     &__nav {
       position: static;
@@ -90,6 +103,10 @@
     &__nav-link {
       color: $white;
       border: none;
+      transition: .3s;
+    }
+    &__nav-link.active {
+      color: $black;
     }
 
     &__ham {
